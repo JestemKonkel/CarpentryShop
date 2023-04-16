@@ -29,7 +29,7 @@ const Popovers = () => {
   const [err, setError] = useState(false);
   const [products, setProducts] = useState(null);
   const [ajdi, setAjdi] = useState(4);
-  let [delivery, setDelivery] = useState([]);
+  const [delivery, setDelivery] = useState([]);
   const [quan, setQuan] = useState(1);
 
   useEffect(() => {
@@ -102,6 +102,7 @@ const Popovers = () => {
     updateData(`http://localhost:8080/api/products/delivery?product=${keys}&quan=${values}&types=${types}`, {
     });
   }
+
 
 
   return (
