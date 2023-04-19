@@ -12,7 +12,8 @@ Project files structure:
     
     frontend:
         Contain React project based on JavaScript
-        This is a full UI layer which works through axios with API (uses a address which is exposed from Spring Boot e.g localhost:8080)
+        This is a full UI layer which works through axios with API 
+        (uses a address which is exposed from Spring Boot e.g localhost:8080)
         Look is mostly based on CoreUI
 
 Specific details are in individual files
