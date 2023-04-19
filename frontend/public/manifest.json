@@ -1,13 +1,6 @@
 {
-  "short_name": "CoreUI-React",
-  "name": "CoreUI-React sample",
-  "icons": [
-    {
-      "src": "./assets/img/favicon.png",
-      "sizes": "100x100",
-      "type": "image/png"
-    }
-  ],
+  "short_name": "Carpentry Shop",
+  "name": "Carpentry Shop",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

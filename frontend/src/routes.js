@@ -1,18 +1,18 @@
 import React from 'react'
 
-const Dashboard = React.lazy(() => import('./views/Dashboard'))
-const NewOrder = React.lazy(() => import('./views/NewOrder'))
-const ProductList = React.lazy(() => import('./views/ProductList.js'))
-const ProjectDetail = React.lazy(() => import('./views/ProjectDetail'))
-const ConstantDetail = React.lazy(() => import('./views/ConstantDetail'))
-const LiquidDetail = React.lazy(() => import('./views/LiquidDetail'))
-const JobList = React.lazy(() => import('./views/JobList'))
-const JobDetail = React.lazy(() => import('./views/JobDetail'))
-const CreateProjects = React.lazy(() => import('./views/CreateProjects'))
-const CreateConstant = React.lazy(() => import('./views/CreateConstant'))
-const CreateLiquid = React.lazy(() => import('./views/CreateLiquid'))
-const Order = React.lazy(() => import('./views/Order'))
-const Delivery = React.lazy(() => import('./views/Delivery'))
+const Dashboard = React.lazy(() => import('./views/MainPanelViews/Dashboard'))
+const NewOrder = React.lazy(() => import('./views/OrderViews/NewOrder'))
+const ProductList = React.lazy(() => import('./views/ProductsViews/ProductList.js'))
+const ProjectDetail = React.lazy(() => import('./views/ProductsViews/ProjectDetail'))
+const ConstantDetail = React.lazy(() => import('./views/ProductsViews/ConstantDetail'))
+const LiquidDetail = React.lazy(() => import('./views/ProductsViews/LiquidDetail'))
+const JobList = React.lazy(() => import('./views/AssignmentViews/JobList'))
+const JobDetail = React.lazy(() => import('./views/AssignmentViews/JobDetail'))
+const CreateProjects = React.lazy(() => import('./views/ProductsViews/CreateProjects'))
+const CreateConstant = React.lazy(() => import('./views/ProductsViews/CreateConstant'))
+const CreateLiquid = React.lazy(() => import('./views/ProductsViews/CreateLiquid'))
+const Order = React.lazy(() => import('./views/OrderViews/Order'))
+const Delivery = React.lazy(() => import('./views/DeliveryView/Delivery'))
 
 
 const routes = [

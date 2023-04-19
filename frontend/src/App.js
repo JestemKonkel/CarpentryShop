@@ -1,6 +1,7 @@
 import React, { Component, Suspense } from 'react'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import './scss/style.scss'
+import { install } from "resize-observer";
 
 const loading = (
   <div className="pt-3 text-center">
@@ -9,7 +10,7 @@ const loading = (
 )
 
 const DefaultLayout = React.lazy(() => import('./layout/DefaultLayout'))
-
+install();
 class App extends Component {
   render() {
     return (

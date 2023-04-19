@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.project.carpentryshop.CarpentryshopApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.74 s - in com.project.carpentryshop.CarpentryshopApplicationTests

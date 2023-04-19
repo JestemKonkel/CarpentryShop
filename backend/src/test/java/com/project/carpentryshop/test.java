@@ -1,14 +1,13 @@
 package com.project.carpentryshop;
 
-import com.project.carpentryshop.Api.ConstantApi;
-import com.project.carpentryshop.Api.LiquidApi;
-import com.project.carpentryshop.Api.ProjectApi;
-import com.project.carpentryshop.Repo.ElementConstantRepo;
-import com.project.carpentryshop.Repo.ElementLiquidRepo;
-import com.project.carpentryshop.Repo.ProductRepo;
-import com.project.carpentryshop.entity.*;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
+import com.project.carpentryshop.Api.ProductsEndpoints.ConstantApi;
+import com.project.carpentryshop.Api.ProductsEndpoints.LiquidApi;
+import com.project.carpentryshop.Api.ProductsEndpoints.ProjectApi;
+import com.project.carpentryshop.Repo.ProductsRepo.ProductRepo;
+import com.project.carpentryshop.entity.Products.ElementConstant;
+import com.project.carpentryshop.entity.Products.ElementLiquid;
+import com.project.carpentryshop.entity.Products.Product;
+import com.project.carpentryshop.entity.Products.Project;
 import org.junit.jupiter.api.Test;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +16,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
@@ -48,13 +46,7 @@ public class test {
         projectApi.addProject(new Project());
         constantApi.addConst(new ElementConstant());
         liquidApi.addLiquid(new ElementLiquid());
-
-
-
                 assertThat(productRepo.count()).isEqualTo((3L));
-
-
-
     }
 
     @Test
@@ -87,7 +79,7 @@ public class test {
 
 
     @Test
-    public void UpdateProduct() throws Exception {
+    public void UpdateProduct() {
         productId = productRepo.findTopByOrderByIdDesc().getId();
 
         Product foundProject = productRepo.findById(productId - 2).get();
@@ -114,7 +106,7 @@ public class test {
     }
 
     @Test
-    public void DeleteProduct() throws Exception {
+    public void DeleteProduct() {
         productId = productRepo.findTopByOrderByIdDesc().getId();
         productRepo.deleteById(productId);
 

@@ -58,6 +58,7 @@
     "react-router-dom": "^6.4.4",
     "react-scripts": "5.0.1",
     "redux": "4.2.0",
+    "resize-observer": "^1.0.4",
     "simplebar-react": "^2.4.1",
     "sweetalert": "^2.1.2",
     "web-vitals": "^2.1.4",
@@ -75,5 +76,17 @@
   "engines": {
     "node": ">=10",
     "npm": ">=6"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

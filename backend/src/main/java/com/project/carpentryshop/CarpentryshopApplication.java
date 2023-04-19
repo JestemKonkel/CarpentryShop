@@ -9,6 +9,8 @@ public class CarpentryshopApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CarpentryshopApplication.class, args);
 
+		System.out.println("Nooooowa wersja");
+
 	}
 
 }
