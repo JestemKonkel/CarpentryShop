@@ -1,4 +1,4 @@
-package com.project.carpentryshop.Repo.OrderRepo.AssignmentsRepo.ItemsRepo;
+package com.project.carpentryshop.Repo.OrderRepo.ItemsRepo;
 
 import com.project.carpentryshop.entity.Order.Items.Items;
 import com.project.carpentryshop.entity.Products.ElementConstant;

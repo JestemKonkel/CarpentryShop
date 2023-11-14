@@ -1,7 +1,7 @@
 package com.project.carpentryshop.Api.OrderEnpoints.ItemsEndpoints;
 
-import com.project.carpentryshop.Repo.OrderRepo.AssignmentsRepo.ItemsRepo.ItemListRepository;
-import com.project.carpentryshop.Repo.OrderRepo.AssignmentsRepo.ItemsRepo.ItemsRepository;
+import com.project.carpentryshop.Repo.OrderRepo.ItemsRepo.ItemListRepository;
+import com.project.carpentryshop.Repo.OrderRepo.ItemsRepo.ItemsRepository;
 import com.project.carpentryshop.entity.Order.Items.ItemList;
 import com.project.carpentryshop.entity.Order.Items.Items;
 import org.springframework.beans.factory.annotation.Autowired;
